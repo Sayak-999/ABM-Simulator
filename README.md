@@ -6,6 +6,22 @@ The model is delivered as an [R Shiny](https://shiny.posit.co/) web app (`app.R`
 
 > **▶️ Live app: [https://anikburman.shinyapps.io/ABM_simulator/](https://anikburman.shinyapps.io/ABM_simulator/)**
 
+### 📺 Tutorial video
+
+<!--
+  TO EMBED THE VIDEO PLAYER:
+  1. Edit this README on github.com (or open a new issue) and drag-and-drop
+     www/app_tutorial.mp4 into the text box.
+  2. GitHub uploads it and gives you a URL like:
+        https://github.com/user-attachments/assets/xxxxxxxx-xxxx-...
+  3. Paste that URL on its own line below (keep the blank lines around it).
+  The video (~20 MB) is well under GitHub's 100 MB attachment limit.
+-->
+
+PASTE_GITHUB_USER_ATTACHMENTS_VIDEO_URL_HERE
+
+_A short walkthrough of how to set up and run a simulation. (The same video is available inside the app's **Overview** tab.)_
+
 ---
 
 ## Table of contents
@@ -188,4 +204,4 @@ A license has not been chosen yet. Until a `LICENSE` file is added to this repos
 
 ---
 
-> **Setup checklist before pushing:** swap any `<your-username>/<repo-name>` placeholders, add a `LICENSE` file, and resolve the tutorial-video filename note above.
+> **Setup checklist before pushing:** swap any `<your-username>/<repo-name>` placeholders, add a `LICENSE` file, resolve the tutorial-video filename note above, and (after the first push) drag-drop `app_tutorial.mp4` into the README on github.com and paste the resulting URL over `PASTE_GITHUB_USER_ATTACHMENTS_VIDEO_URL_HERE`.
