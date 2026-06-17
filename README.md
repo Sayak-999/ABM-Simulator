@@ -12,23 +12,9 @@ The methodology and results are described in the paper **["A Flexible Agent-Base
 
 ### 📺 Tutorial video
 
-<!--
-  TO EMBED THE VIDEO PLAYER:
-  1. Edit this README on github.com (or open a new issue) and drag-and-drop
-     www/app_tutorial_web.mp4 into the text box.
-     (Use app_tutorial_web.mp4 -- it is a "faststart" version with the index
-      at the front of the file, which GitHub recognizes as a video. The
-      original app_tutorial.mp4 was rejected with a 10 MB error because its
-      index sat at the end and GitHub treated it as a generic file.)
-  2. GitHub uploads it and gives you a URL like:
-        https://github.com/user-attachments/assets/xxxxxxxx-xxxx-...
-  3. Paste that URL on its own line below (keep the blank lines around it).
-  The video (~20 MB) is well under GitHub's 100 MB video limit.
--->
+▶️ **[Watch the tutorial video](app_tutorial.mp4)** — a short walkthrough of how to set up and run a simulation. Click the link to open the video in GitHub's built-in player (with audio).
 
-PASTE_GITHUB_USER_ATTACHMENTS_VIDEO_URL_HERE
-
-_A short walkthrough of how to set up and run a simulation. (The same video is available inside the app's **Overview** tab.)_
+> The same video is also available inside the app's **Overview** tab.
 
 ---
 
