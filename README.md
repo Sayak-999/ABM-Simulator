@@ -4,18 +4,26 @@ An interactive **agent-based model (ABM)** that simulates how an infection like 
 
 The model is delivered as an [R Shiny](https://shiny.posit.co/) web app (`app.R`). You can run it in your browser without writing any code.
 
+The methodology and results are described in the paper **["A Flexible Agent-Based Model to Study COVID-19 Outbreak — A Generic Approach"](https://arxiv.org/abs/2106.11070)** (arXiv:2106.11070).
+
 > **▶️ Live app: [https://anikburman.shinyapps.io/ABM_simulator/](https://anikburman.shinyapps.io/ABM_simulator/)**
+>
+> **📄 Paper: [arXiv:2106.11070](https://arxiv.org/abs/2106.11070)**
 
 ### 📺 Tutorial video
 
 <!--
   TO EMBED THE VIDEO PLAYER:
   1. Edit this README on github.com (or open a new issue) and drag-and-drop
-     www/app_tutorial.mp4 into the text box.
+     www/app_tutorial_web.mp4 into the text box.
+     (Use app_tutorial_web.mp4 -- it is a "faststart" version with the index
+      at the front of the file, which GitHub recognizes as a video. The
+      original app_tutorial.mp4 was rejected with a 10 MB error because its
+      index sat at the end and GitHub treated it as a generic file.)
   2. GitHub uploads it and gives you a URL like:
         https://github.com/user-attachments/assets/xxxxxxxx-xxxx-...
   3. Paste that URL on its own line below (keep the blank lines around it).
-  The video (~20 MB) is well under GitHub's 100 MB attachment limit.
+  The video (~20 MB) is well under GitHub's 100 MB video limit.
 -->
 
 PASTE_GITHUB_USER_ATTACHMENTS_VIDEO_URL_HERE
@@ -174,20 +182,26 @@ The tutorial video lives in the **`www/`** folder and is served automatically by
 
 ## Citation
 
-If you use this simulator or model in your work, please cite:
+If you use this simulator or model in your work, please cite the arXiv preprint:
 
-> Burman, A., Chatterjee, S., Ghosh, P., & Mukhopadhyay, I. *Agent based model of COVID-19 pandemic.* Manuscript / preprint. _(DOI: TODO)_
+> Burman, A., Chatterjee, S., Ghosh, P., & Mukhopadhyay, I. (2021). *A Flexible Agent-Based Model to Study COVID-19 Outbreak — A Generic Approach.* arXiv:2106.11070 [q-bio.PE]. https://doi.org/10.48550/arXiv.2106.11070
 
 A BibTeX entry:
 
 ```bibtex
-@article{burman_abm_covid19,
-  title   = {Agent based model of COVID-19 pandemic},
-  author  = {Burman, Anik and Chatterjee, Sayak and Ghosh, Pramit and Mukhopadhyay, Indranil},
-  note    = {Manuscript / preprint},
-  year    = {TODO}
+@misc{burman2021flexibleabm,
+  title         = {A Flexible Agent-Based Model to Study COVID-19 Outbreak -- A Generic Approach},
+  author        = {Burman, Anik and Chatterjee, Sayak and Ghosh, Pramit and Mukhopadhyay, Indranil},
+  year          = {2021},
+  eprint        = {2106.11070},
+  archivePrefix = {arXiv},
+  primaryClass  = {q-bio.PE},
+  doi           = {10.48550/arXiv.2106.11070},
+  url           = {https://arxiv.org/abs/2106.11070}
 }
 ```
+
+📄 **Read the paper:** [arXiv:2106.11070](https://arxiv.org/abs/2106.11070) · [PDF](https://arxiv.org/pdf/2106.11070)
 
 ## Authors
 
