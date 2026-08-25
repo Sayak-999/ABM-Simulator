@@ -1,10 +1,10 @@
 # Agent-Based Simulator for the COVID-19 Pandemic
 
-An interactive **agent-based model (ABM)** that simulates how an infection like COVID-19 spreads through a small, synthetic community. Instead of tracking population-level averages (as classic SIR/SEIR compartmental models do), this simulator tracks **every individual ("agent")** day by day — each with their own age, sex, occupation, economic status, mobility, immunity, and comorbidity — and lets you watch an outbreak unfold under different interventions.
+An interactive **agent-based model (ABM)** that simulates how an infection like COVID-19 spreads through a small, synthetic community. Instead of tracking population-level averages (as classical SIR/SEIR compartmental models do), this simulator tracks **every individual ("agent")** day by day — each with its own age, sex, occupation, economic status, mobility, immunity, and comorbidity — and lets you watch an outbreak unfolds under different interventions.
 
 The model is delivered as an [R Shiny](https://shiny.posit.co/) web app (`app.R`). You can run it in your browser without writing any code.
 
-The methodology and results are described in the paper **["A Flexible Agent-Based Model to Study COVID-19 Outbreak — A Generic Approach"](https://arxiv.org/abs/2106.11070)** (arXiv:2106.11070).
+The methodology and results are described in the paper **["An AI-Enabled Agent-Based Simulation Platform for Studying COVID-19 Pandemic"](https://arxiv.org/abs/2106.11070)** (arXiv:2106.11070).
 
 > **▶️ Live app: [https://anikburman.shinyapps.io/ABM_simulator/](https://anikburman.shinyapps.io/ABM_simulator/)**
 >
@@ -35,7 +35,7 @@ The methodology and results are described in the paper **["A Flexible Agent-Base
 
 ---
 
-## What the simulator does
+## What the ABM-simulator does
 
 Understanding the dynamics of an outbreak is essential for designing effective control measures. This tool lets you experiment with those dynamics directly. You set up a virtual community of several thousand people, drop one or more initial infections into it, optionally impose lockdowns, and then run the clock forward to see how many people become infected, recover, or die over time.
 
@@ -50,7 +50,7 @@ You can use it to explore questions such as:
 
 ## How the model works
 
-Each agent is assigned demographic attributes from **2011 Census** distributions (age, sex, working status, economic status), plus an immunity probability that depends on age and sex. Agents move around a square map each simulated day; movement patterns depend on age, gender, work status, economic status, and whether the agent is abiding by lockdown.
+Each agent is assigned demographic attributes from **2011 India Census** distributions (age, sex, working status, economic status), plus an immunity probability that depends on age and sex. Agents move around a square map each simulated day; movement patterns depend on age, gender, work status, economic status, and whether the agent is abiding by lockdown.
 
 Infection spreads through **proximity**: every infected agent carries a circular "neighbourhood" (the *radius of infection*). When a susceptible agent enters that neighbourhood, they may become infected with a probability that depends on the infector's disease stage and the susceptible person's circumstances.
 
@@ -58,7 +58,7 @@ An infected agent then progresses through a series of disease states over roughl
 
 `Susceptible → Pre-symptomatic → Early-symptomatic → Late-symptomatic → Recovered / Deceased`
 
-…or, for a configurable fraction of cases, an **Asymptomatic** path that still transmits the disease. Whether a late-symptomatic agent survives depends on a mortality risk that rises with age and comorbidity, and on whether they were correctly identified by testing (governed by the *sensitivity* parameter). Recovered agents are assumed immune for the rest of the run, and deceased agents are removed from the population.
+or, for a configurable fraction of cases, an **Asymptomatic** path that still transmits the disease. Whether a late-symptomatic agent survives depends on a mortality risk that rises with age and comorbidity, and on whether they were correctly identified by testing (governed by the *sensitivity* parameter). Recovered agents are assumed immune for the rest of the run, and deceased agents are removed from the population.
 
 ## Quick start (use the live app)
 
@@ -176,7 +176,7 @@ A BibTeX entry:
 
 ```bibtex
 @misc{burman2021flexibleabm,
-  title         = {A Flexible Agent-Based Model to Study COVID-19 Outbreak -- A Generic Approach},
+  title         = {An AI-Enabled Agent-Based Simulation Platform for Studying COVID-19 Pandemic},
   author        = {Burman, Anik and Chatterjee, Sayak and Ghosh, Pramit and Mukhopadhyay, Indranil},
   year          = {2021},
   eprint        = {2106.11070},
